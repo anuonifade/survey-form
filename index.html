@@ -17,7 +17,7 @@
   <body>
     <div class="container main-div">
       <h1 id="title">Survey Form</h1>
-      <p id="description">This is a survey form</p>
+      <p id="description">Kindly fill in the form below</p>
       <div class="main-form">
         <form id= "survey-form">
           <div class="form-group">
@@ -33,31 +33,56 @@
             <input type="number" class="form-control" id="number" placeholder="Enter your Age" min=0 max=100>
           </div>
           <div class="form-group"> 
-          <label for="dropdown-label">Current role</label>
-           <select class="form-control" id="dropdown">
-            <option>student</option>
-             <option>part time job</option>
+            <label for="dropdown-label">Current role</label>
+            <select class="form-control" id="dropdown">
+              <option>student</option>
+              <option>part time job</option>
               <option>Full time job</option> 
               <option>self employed</option> 
               <option>Others</option> 
-              </select> 
+            </select> 
+          </div>
+          <fieldset class="form-group"> 
+            <legend class="col-form-label pt-0">How likely are you to recommend us?</legend> 
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="name" id="name" value="definitely" checked> 
+                <label class="form-check-label" for="Definitely"> Definitely </label>
+              </div> 
+              <div class="form-check"> 
+                <input class="form-check-input" type="radio" name="name" id="name" value="maybe">
+                <label class="form-check-label" for="Maybe"> Maybe </label>
               </div>
-              <fieldset class="form-group"> 
-<div class="row"> 
-<legend class="col-form-label col-sm-2 pt-0">Radios</legend> 
-<div class="col-sm-10"> <div class="form-check">
-<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked> 
-<label class="form-check-label" for="gridRadios1"> First radio </label>
-</div> 
-<div class="form-check"> 
-<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-<label class="form-check-label" for="gridRadios2"> Second radio </label>
- </div> <div class="form-check">
-  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-   <label class="form-check-label" for="gridRadios3"> Third disabled radio </label> </div> </div> </div>
-    </fieldset>
-
-        
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="name" id="name" value="Not sure">
+                <label class="form-check-label" for="Notsure"> Not sure </label> 
+              </div> 
+            </div>
+          </fieldset>
+          <fieldset class="form-group"> 
+            <legend class="col-form-label pt-0">Select all that apply</legend> 
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Frontend"> 
+                <label class="form-check-label" for="Frontend"> Frontend </label>
+              </div> 
+              <div class="form-check"> 
+                <input class="form-check-input" type="checkbox" value="Backend">
+                <label class="form-check-label" for="Backend"> Backend </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Full Stack">
+                <label class="form-check-label" for="FullStack"> Full Stack </label> 
+              </div> 
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="Comment">Comment</label>
+            <textarea class="form-control" id="comment" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="Submit">
+          </div>
         </form>
       </div>
     </div>
