@@ -1,3 +1,6 @@
+body {
+  background-color: #A9D7D1;
+}
 .main-div {
   margin: auto;
   margin-top: 2rem;
@@ -5,8 +8,9 @@
 
 .main-form {
   max-width: 700px;
+  background-color: #FAFAFA;
   border-style: solid;
-  border-color: aliceblue;
+  border-color: lightgrey;
   border-radius: 10px;
   padding: 20px;
   border-width: 1px;
